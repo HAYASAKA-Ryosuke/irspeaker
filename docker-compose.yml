@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  julius:
+    build: ./docker_images/julius/
+    tty: true
+    # devices:
+    #   - ""
+  irserver:
+    build: ./docker_images/irserver/
+    tty: true
+    volumes:
+      - "./irserver/:/root/irserver/"

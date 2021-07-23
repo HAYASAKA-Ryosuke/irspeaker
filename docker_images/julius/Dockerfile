@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:bionic
 
 RUN apt update -y
 RUN apt install -y build-essential zlib1g-dev libsdl2-dev libasound2-dev curl
